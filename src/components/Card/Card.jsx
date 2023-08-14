@@ -29,12 +29,12 @@ export default function Card({ ticket, user, displayState }) {
         <div className={styles["wrapper"]}>
             <header className={styles["header"]}>
                 <div className={styles["id"]}>{ticket.id}</div>
-                {displayState !== 2 ? <img className={styles["profile-picture"]} id={user.available ? styles["available"] : undefined} src="/default_profile_picture.jpg" /> : <></>}
+                {displayState !== 2 ? <img className={styles["profile-picture"]} id={user.available ? styles["available"] : undefined} src="default_profile_picture.jpg" /> : <></>}
             </header>
             <div className={styles["title"]}>{ticket.title}</div>
             <div className={styles["tag-wrapper"]}>
-                {displayState !== 0 ? <div className={styles["tag"]}><img className={styles["icon"]} src={`/status/${ticket.status}.svg`} /></div> : <></>}
-                {displayState !== 1 ? <div className={styles["tag"]}><img className={styles["icon"]} src={`/priority/${priorityIcon}`} /></div> : <></>}
+                {displayState !== 0 ? <div className={styles["tag"]}><img className={styles["icon"]} src={`status/${ticket.status}.svg`} /></div> : <></>}
+                {displayState !== 1 ? <div className={styles["tag"]}><img className={styles["icon"]} src={`priority/${priorityIcon}`} /></div> : <></>}
                 {ticket.tag.length > 0 ? ticket.tag.map((tag, i) => <div key={i} className={styles["tag"]}>&#9679; {tag}</div>) : <></>}
             </div>
         </div>

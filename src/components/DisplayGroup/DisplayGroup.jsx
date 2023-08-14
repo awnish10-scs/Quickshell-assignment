@@ -65,10 +65,10 @@ export default function DisplayGroup({ tickets, users, title, displayState, prio
                             <img
                                 className={styles["profile-pic"]}
                                 id={users.find(user => user.id === filter)?.available ? styles["available"] : undefined}
-                                src="/default_profile_picture.jpg"
+                                src="default_profile_picture.jpg"
                             /> :
-                            displayState === 1 ? <img className={styles["icon"]} src={`/priority/${title}.svg`} /> :
-                                <img className={styles["icon"]} src={`/status/${title}.svg`} />
+                            displayState === 1 ? <img className={styles["icon"]} src={`priority/${title}.svg`} /> :
+                                <img className={styles["icon"]} src={`status/${title}.svg`} />
                         }
                     </div>
                     <div className={styles["title"]}>{title}</div>
