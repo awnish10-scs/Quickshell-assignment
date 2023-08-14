@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+}
+
+.header-left-group {
+    display: flex;
+}
+
+.header-left-group > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 4px;
+}
+
+.profile-pic {
+    height: 1.2rem;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.icon {
+    height: 1.2rem;
+}
+
+.profile-pic#available {
+    border: 2px solid #50C878;
+}
+
+.title {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.count {
+    color: gray;
+}
+
+.header-right-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right-group > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 2px;
+    aspect-ratio: 1;
+    width: 1rem;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-right-group > div:hover {
+    background-color: #DDDDDD;
+}

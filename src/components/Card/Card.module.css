@@ -1,0 +1,68 @@
+.wrapper {
+    min-height: 8vh;
+    width: calc(100% - 1rem);
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+    margin: 0.8vh 0;
+    box-shadow: 0 0 8px -6px;
+    padding: 0.6rem 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.id {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0.3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-picture {
+    height: 1.2rem;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.profile-picture#available {
+    border: 2px solid #50C878;
+}
+
+.title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+}
+
+.tag-wrapper {
+    display: flex;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: gray;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 2px 4px;
+    margin: 0 2px;
+}
+
+.icon {
+    height: 0.75rem;
+}
